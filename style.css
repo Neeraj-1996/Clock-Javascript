@@ -1,0 +1,94 @@
+*{box-sizing: border-box;}
+body{
+	font-size: 20px;
+	font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif; 
+}
+.clock-container{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 3px solid #333;
+	background-color: #eee;
+	margin: 0 auto;
+}
+.number{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+}
+
+.num1{
+	transform: rotate(30deg);
+}
+.num2{
+	transform: rotate(60deg);
+}
+.num3{
+	transform: rotate(90deg);
+}
+.num4{
+	transform: rotate(120deg);
+}
+.num5{
+	transform: rotate(150deg);
+}
+.num6{
+	transform: rotate(180deg);
+}
+.num7{
+	transform: rotate(210deg);
+}
+.num8{
+	transform: rotate(240deg);
+}
+.num9{
+	transform: rotate(270deg);
+}
+.num10{
+	transform: rotate(300deg);
+}
+.num11{
+	transform: rotate(330deg);
+}
+
+.point-center{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #333;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	z-index: 6;
+	transform: translate(-50%, -50%);
+}
+.cl {
+	--rotation: 0;
+	position: absolute;
+	
+	bottom: 50%;
+	left: 50%;
+	left: 50%;
+	transform-origin: bottom;
+	transform: translateX(-50%) rotate(calc(var(--rotation) *1deg));
+}
+
+.clock-hours{
+	width: 5px;
+	height: 30%;
+	background-color: #333;
+}
+
+.clock-minutes{
+	width: 3px;
+	height: 40%;
+	background-color: #333;
+}
+
+.clock-seconds{
+	width: 1px;
+	height: 45%;
+	background-color: red;
+}
